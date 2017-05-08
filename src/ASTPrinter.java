@@ -1,9 +1,7 @@
-import com.sun.xml.internal.bind.v2.model.runtime.RuntimeAttributePropertyInfo;
-
 /**
  * ASTPrinter
  */
-public class ASTPrinter implements Exp.Visitor<String> {
+public class ASTPrinter implements Expr.Visitor<String> {
   String print(Expr expr) {
     return expr.accept(this);
   }
